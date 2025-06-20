@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MenteSana - Bienestar Emocional</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-green-50 text-gray-800">
+  <!-- NAV -->
+  <nav class="bg-white p-4 text-gray-800 flex justify-between items-center shadow-md sticky top-0 z-50">
+    <div class="flex items-center gap-2">
+      <img src="img/logo.png" alt="logo" class="w-8 h-8" />
+      <h1 class="text-xl font-bold">MenteSana</h1>
+    </div>
+    <ul class="flex gap-6 font-medium">
+      <li><a href="#inicio" class="hover:text-green-600">Inicio</a></li>
+      <li><a href="#servicios" class="hover:text-green-600">Servicios</a></li>
+      <li><a href="#sobre" class="hover:text-green-600">Nosotros</a></li>
+      <li><a href="#testimonios" class="hover:text-green-600">Testimonios</a></li>
+      <li><a href="#contacto" class="hover:text-green-600">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HEADER -->
+  <header id="inicio" class="bg-gradient-to-br from-teal-200 to-green-100 py-32 text-center">
+
+    <h2 class="hero-title text-6xl md:text-7xl font-extrabold text-gray-900 mb-4 scroll-fade">
+      Tu Bienestar Mental es Nuestra
+    </h2>
+    <h2 class="hero-subtitle text-7xl md:text-7xl font-extrabold custom-title mb-8 scroll-fade delay">
+      Prioridad
+    </h2>
+
+    <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-6 scroll-fade delay">
+      Ofrecemos servicios profesionales de psicología para ayudarte a alcanzar el equilibrio emocional y mental que
+      mereces. Nuestro equipo está aquí para apoyarte.
+    </p>
+    <div class="flex justify-center gap-4 scroll-fade delay">
+      <a href="#contacto" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded shadow">Agendar Cita</a>
+      <button onclick="toggleChat()"
+        class="flex items-center gap-2 border border-green-600 text-green-600 px-6 py-2 rounded hover:bg-green-100">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2v7a2 2 0 01-2 2h-3l-4 4z" />
+        </svg>
+        Asistente Virtual
+      </button>
+    </div>
+  </header>
+
+  <!-- SERVICIOS -->
+
+  <section id="servicios" class="p-8 bg-white">
+    <h3 class="text-3xl text-center font-bold mb-8">Nuestros Servicios</h3>
+    <p class="text-center max-w-3xl mx-auto mb-12 text-lg">
+      Ofrecemos una amplia gama de servicios psicológicos adaptados a tus necesidades específicas
+    </p>
+    <div class="grid md:grid-cols-4 gap-6 text-center">
+
+      <div class="relative group rounded-lg overflow-hidden shadow-md h-72 cursor-pointer">
+        <img src="img/individual.png" alt="Terapia Individual" class="w-full h-full object-cover" />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-white px-4 opacity-0 group-hover:opacity-100 transition duration-300">
+          <div class="text-3xl mb-2">❤️</div>
+          <h4 class="font-semibold text-lg mb-1">Terapia Individual</h4>
+          <p class="mb-2 text-sm text-center">Sesiones personalizadas para abordar tus necesidades específicas</p>
+          <div class="flex items-center gap-2 text-sm">
+            <span>🕒</span><span>50 min</span>
+            <p class="text-green-300 font-semibold">Desde $80</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="relative group rounded-lg overflow-hidden shadow-md h-72 cursor-pointer">
+        <img src="img/pareja.png" alt="Terapia Pareja" class="w-full h-full object-cover" />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-white px-4 opacity-0 group-hover:opacity-100 transition duration-300">
+          <div class="text-3xl mb-2">👥</div>
+          <h4 class="font-semibold text-lg mb-1">Terapia de Pareja</h4>
+          <p class="mb-2 text-sm">Fortalece tu relación con herramientas de comunicación efectiva</p>
+          <div class="flex items-center gap-2 text-sm">
+            <span>🕒</span><span>60 min</span>
+            <p class="text-green-300 font-semibold">Desde $120</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="relative group rounded-lg overflow-hidden shadow-md h-72 cursor-pointer">
+        <img src="img/familiar.png" alt="Terapia Familiar" class="w-full h-full object-cover" />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-white px-4 opacity-0 group-hover:opacity-100 transition duration-300">
+          <div class="text-3xl mb-2">👪</div>
+          <h4 class="font-semibold text-lg mb-1">Terapia Familiar</h4>
+          <p class="mb-2 text-sm">Mejora la dinámica familiar y resuelve conflictos</p>
+          <div class="flex items-center gap-2 text-sm">
+            <span>🕒</span><span>60 min</span>
+            <p class="text-green-300 font-semibold">Desde $150</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative group rounded-lg overflow-hidden shadow-md h-72 cursor-pointer">
+        <img src="img/estres.png" alt="Terapia Estres" class="w-full h-full object-cover" />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-white px-4 opacity-0 group-hover:opacity-100 transition duration-300">
+          <div class="text-3xl mb-2">🧠</div>
+          <h4 class="font-semibold text-lg mb-1">Manejo del Estrés</h4>
+          <p class="mb-2 text-sm text-center">Técnicas efectivas para manejar el estrés y la ansiedad</p>
+          <div class="flex items-center gap-2 text-sm">
+            <span>🕒</span><span>45 min</span>
+            <p class="text-green-300 font-semibold">Desde $100</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- SOBRE NOSOTROS -->
+  <section id="nosotros" class="bg-green-50 py-16 scroll-fade delay">
+    <div class="container mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h3 class="text-3xl font-bold text-gray-800 mb-4">Sobre Nosotros</h3>
+        <p class="mb-4">Somos un equipo de psicólogos profesionales comprometidos con tu bienestar mental. Con más de 10
+          años de experiencia, hemos ayudado a miles de personas a superar sus desafíos emocionales y mentales.</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>Psicólogos licenciados y certificados</li>
+          <li>Enfoque personalizado para cada paciente</li>
+          <li>Ambiente seguro y confidencial</li>
+          <li>Modalidad presencial y virtual</li>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-2xl font-semibold text-gray-800 mb-4">¿Por qué elegirnos?</h4>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>Experiencia comprobada en diversas áreas de la psicología</li>
+          <li>Tratamientos basados en evidencia científica</li>
+          <li>Horarios flexibles adaptados a tu rutina</li>
+          <li>Primera consulta gratuita</li>
+          <li>Seguimiento continuo de tu progreso</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISIÓN Y VISIÓN -->
+  <section id="mision-vision" class="bg-white py-16">
+    <div class="text-center mb-12 scroll-fade">
+      <h2 class="text-3xl font-bold">Nuestra misión y visión</h2>
+      <p class="text-gray-700 mt-2">Los valores que nos guían en nuestro compromiso con tu bienestar mental.</p>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+      <div class="bg-white p-6 rounded-lg shadow-md overflow-visible relative scroll-fade border-grow-green">
+        <div class="flex items-center mb-4">
+          <img src="https://cdn-icons-png.flaticon.com/512/4275/4275539.png" alt="Misión" class="w-10 h-10 mr-3">
+          <h3 class="text-2xl font-bold text-gray-800">Nuestra Misión</h3>
+        </div>
+        <p class="text-gray-700 text-lg mb-4">Brindar servicios de salud mental de la más alta calidad...</p>
+        <ul class="list-none space-y-1 anim-list">
+          <li class="flex items-center fade-in-item"><span class="text-green-600 mr-2">⭐</span>Atención personalizada
+            basada en evidencia</li>
+          <li class="flex items-center fade-in-item"><span class="text-green-600 mr-2">⭐</span>Ambiente de confianza y
+            respeto</li>
+          <li class="flex items-center fade-in-item"><span class="text-green-600 mr-2">⭐</span>Fomento del crecimiento
+            personal</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md overflow-visible relative scroll-fade border-grow-teal">
+        <div class="flex items-center mb-4">
+          <img src="https://cdn-icons-png.flaticon.com/512/3989/3989758.png" alt="Visión" class="w-10 h-10 mr-3">
+          <h3 class="text-2xl font-bold text-gray-800">Nuestra Visión</h3>
+        </div>
+        <p class="text-gray-700 text-lg mb-4">Ser reconocidos como el centro de referencia en salud mental...</p>
+        <ul class="list-none space-y-1 anim-list">
+          <li class="flex items-center fade-in-item"><span class="text-green-600 mr-2">⭐</span>Innovación en
+            tratamientos</li>
+          <li class="flex items-center fade-in-item"><span class="text-green-600 mr-2">⭐</span>Eliminar el estigma</li>
+          <li class="flex items-center fade-in-item"><span class="text-green-600 mr-2">⭐</span>Acceso a servicios para
+            todos</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  </section>
+
+  <!-- VALORES-->
+  <section id="valores" class="bg-white py-16 relative overflow-hidden">
+    <div class="absolute top-10 left-10 w-10 h-10 bg-green-100 rounded-full blur-sm"></div>
+    <div class="absolute top-1/2 right-20 w-16 h-16 rounded-full blur-md bolita-color"></div>
+    <div class="absolute bottom-10 left-1/3 w-12 h-12 bolita-color2 rounded-full blur-sm"></div>
+    <div class="absolute bottom-20 right-1/4 w-14 h-14 bolita-color3 rounded-full blur-sm"></div>
+    <div class="absolute top-1/3 left-1/2 w-8 h-8 bg-lime-300 rounded-full blur-sm"></div>
+    <div class="absolute top-1/4 left-1/5 w-6 h-6 bg-emerald-300 rounded-full blur-sm"></div>
+    <div class="absolute bottom-16 right-16 w-20 h-20 bg-green-100 rounded-full blur-md"></div>
+    <div class="absolute bottom-5 left-5 w-7 h-7 bg-green-400 rounded-full blur-sm"></div>
+    <div class="absolute top-0 right-1/3 w-10 h-10 bg-green-200 rounded-full blur-sm"></div>
+
+    <div class="max-w-5xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-12">Nuestros Valores</h3>
+      <p class="text-gray-700 text-lg text-center mb-4">Los pilares que sostienen nuestro compromiso con la excelencia
+        en salud mental</p>
+      <div class="relative flex flex-col items-center">
+        <!-- Línea vertical -->
+        <div class="absolute top-0 bottom-0 left-1/2 w-1 bg-green-200"></div>
+
+        <!-- Línea horizontal -->
+        <div class="absolute top-1/2 left-1/4 right-1/4 h-1 bg-green-200"></div>
+
+        <!-- Valor superior -->
+        <div
+          class="relative z-10 bg-white border border-green-300 rounded-xl shadow-md p-6 mb-12 w-64 text-center card-hover-valores">
+          <h4 class="text-xl font-semibold text-green-700">Empatía</h4>
+          <p class="text-sm text-gray-600 mt-2">Conectamos desde la comprensión emocional.</p>
+        </div>
+        <div class="relative z-10 flex items-center justify-center w-full mb-12">
+          <div class="flex flex-row items-center justify-center gap-16">
+            <div class="bg-white border border-green-300 rounded-xl shadow-md p-6 w-64 text-center card-hover-valores">
+              <h4 class="text-xl font-semibold text-green-700">Compromiso</h4>
+              <p class="text-sm text-gray-600 mt-2">Dedicación constante al bienestar de nuestros pacientes.</p>
+            </div>
+            <div
+              class="flex items-center justify-center w-16 h-16 rounded-full bg-green-100 border-4 border-green-300 text-2xl shadow-lg overflow-hidden">
+              <img src="img/logo2.png" alt="Icono" class="w-full h-full object-cover">
+            </div>
+            <div class="bg-white border border-green-300 rounded-xl shadow-md p-6 w-64 text-center card-hover-valores">
+              <h4 class="text-xl font-semibold text-green-700">Respeto</h4>
+              <p class="text-sm text-gray-600 mt-2">Valoramos la dignidad y diversidad de cada persona.</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative z-10 bg-white border border-green-300 rounded-xl shadow-md p-6 w-64 text-center card-hover-valores">
+          <h4 class="text-xl font-semibold text-green-700">Confidencialidad</h4>
+          <p class="text-sm text-gray-600 mt-2">Protegemos tu información como parte esencial del proceso terapéutico.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDICADORES DE IMPACTO -->
+
+  <section class="py-20 bg-green-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+        <div class="rounded-2xl">
+          <div class="text-green-700 text-4xl mb-3">⏱️</div>
+          <p class="text-4xl font-extrabold text-green-800" data-count="10">0+</p>
+          <p class="text-green-700 mt-3 text-lg font-medium">Años de Experiencia</p>
+        </div>
+        <div class="rounded-2xl">
+          <div class="text-green-700 text-4xl mb-3">💚</div>
+          <p class="text-4xl font-extrabold text-green-800" data-count="1000">0+</p>
+          <p class="text-green-700 mt-3 text-lg font-medium">Vidas Transformadas</p>
+        </div>
+        <div class="rounded-2xl">
+          <div class="text-green-700 text-4xl mb-3">⭐</div>
+          <p class="text-4xl font-extrabold text-green-800" data-count="98" data-percent>0%</p>
+          <p class="text-green-700 mt-3 text-lg font-medium">Satisfacción del Cliente</p>
+        </div>
+        <div class="rounded-2xl">
+          <div class="text-green-700 text-4xl mb-3">📞</div>
+          <p class="text-4xl font-extrabold text-green-800">24/7</p>
+          <p class="text-green-700 mt-3 text-lg font-medium">Apoyo Disponible</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAT -->
+
+  <div class="chat-icon" onclick="toggleChat()">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" alt="Chat" class="w-8 h-8">
+  </div>
+  <div id="chatbox" class="fixed bottom-24 right-6 w-80 bg-white border border-gray-300 rounded shadow-md z-50 hidden">
+    <div class="p-4 border-b bg-teal-600 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <span>Asistente Virtual</span>
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" alt="bot" class="w-5 h-5">
+      </div>
+      <button onclick="toggleChat()">✖️</button>
+    </div>
+    <div class="p-4 h-60 overflow-y-auto" id="chat-content">
+      <div class="mb-2 text-sm">🤖: ¡Hola! ¿En qué puedo ayudarte hoy?</div>
+    </div>
+    <div class="p-2 border-t flex bg-white">
+      <input id="chat-input" type="text" placeholder="Escribe tu mensaje..."
+        class="flex-1 p-2 text-sm border rounded-l">
+    </div>
+  </div>
+
+  <!-- TESTIMONIOS -->
+  <!-- Alpine.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+  <section id="testimonios" class="bg-gray-50 py-20 px-4">
+    <h3 class="text-4xl font-extrabold text-center text-gray-800 mb-4">Lo que dicen de nosotros</h3>
+    <p class="text-center text-lg text-gray-600 max-w-2xl mx-auto mb-12">
+      Historias reales de quienes confiaron en nuestro acompañamiento emocional
+    </p>
+
+    <div x-data="{
+      activeSlide: 0,
+      testimonials: [
+        { name: 'Ana Gómez', role: 'Paciente', comment: 'Gracias a la terapia individual he aprendido a manejar mi ansiedad. Me siento más segura y en control de mi vida.' },
+        { name: 'Familia Rodríguez', role: 'Familia', comment: 'Excelente acompañamiento familiar. Ahora nos entendemos mucho mejor y los conflictos han disminuido.' },
+        { name: 'Carlos y María', role: 'Pareja', comment: 'La terapia de pareja salvó nuestra relación. Aprendimos a comunicarnos con respeto y amor.' },
+        { name: 'Pedro y Ana', role: 'Pareja', comment: 'La terapia de pareja nos ayudó a superar una crisis. Aprendimos a comunicarnos mejor y a resolver nuestros conflictos.' },
+        { name: 'Juan Pérez', role: 'Paciente', comment: 'La terapia de pareja nos ayudó a superar una crisis. Aprendimos a comunicarnos mejor y a resolver nuestros conflictos.' },
+        { name: 'Laura Martínez', role: 'Paciente', comment: 'El manejo del estrés me ha cambiado la vida. Ahora puedo disfrutar más de mis días sin sentirme abrumada.' },
+        { name: 'Familia López', role: 'Familia', comment: 'La terapia familiar nos unió más como familia. Ahora enfrentamos los problemas juntos y con más amor.' },
+        { name: 'Pedro y Ana', role: 'Pareja', comment: 'La terapia de pareja nos ayudó a superar una crisis. Aprendimos a comunicarnos mejor y a resolver nuestros conflictos.' },
+        { name: 'Laura Martínez', role: 'Paciente', comment: 'El manejo del estrés me ha cambiado la vida. Ahora puedo disfrutar más de mis días sin sentirme abrumada.' },
+        { name: 'Carlos y María', role: 'Pareja', comment: 'La terapia de pareja salvó nuestra relación. Aprendimos a comunicarnos con respeto y amor.' },
+        { name: 'Familia Rodríguez', role: 'Familia', comment: 'Excelente acompañamiento familiar. Ahora nos entendemos mucho mejor y los conflictos han disminuido.' }
+      ],
+      slideWidth: 0,
+      init() {
+        this.slideWidth = this.$refs.track.offsetWidth;
+      },
+      goTo(index) {
+        this.activeSlide = index;
+        this.$refs.slider.scrollTo({
+          left: this.slideWidth * index,
+          behavior: 'smooth'
+        });
+      }
+    }" x-init="init" class="relative max-w-4xl mx-auto">
+
+      <!-- Contenedor de carrusel con flechas -->
+      <div class="flex items-center">
+        <!-- Botón anterior -->
+        <button @click="goTo((activeSlide - 1 + testimonials.length) % testimonials.length)"
+          class="text-green-600 hover:bg-green-100 rounded-full w-10 h-10 flex items-center justify-center shadow mr-4">
+          ←
+        </button>
+
+        <!-- Carrusel desplazable -->
+        <div x-ref="slider" class="overflow-hidden w-full">
+          <div x-ref="track" class="flex transition-all duration-700 ease-out" style="scroll-behavior: smooth;">
+            <template x-for="(testimonial, index) in testimonials" :key="index">
+              <div class="min-w-full px-4">
+                <div class="bg-white p-8 rounded-xl shadow-xl text-center">
+                  <svg class="w-10 h-10 text-green-300 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M7.17 15H4a1 1 0 01-1-1v-1a7 7 0 017-7h1a1 1 0 011 1v1a7 7 0 01-7 7zm11 0h-3.17a7 7 0 007-7V6a1 1 0 00-1-1h-1a7 7 0 00-7 7v1a1 1 0 001 1z" />
+                  </svg>
+                  <p class="text-gray-700 italic text-lg leading-relaxed mb-6" x-text="testimonial.comment"></p>
+                  <h4 class="text-xl font-semibold text-green-700" x-text="testimonial.name"></h4>
+                  <p class="text-sm text-gray-500" x-text="testimonial.role"></p>
+                </div>
+              </div>
+            </template>
+          </div>
+        </div>
+
+        <!-- Botón siguiente -->
+        <button @click="goTo((activeSlide + 1) % testimonials.length)"
+          class="text-green-600 hover:bg-green-100 rounded-full w-10 h-10 flex items-center justify-center shadow ml-4">
+          →
+        </button>
+      </div>
+
+      <!-- Indicadores debajo -->
+      <div class="flex justify-center mt-6 space-x-3">
+        <template x-for="(dot, index) in testimonials" :key="'dot-' + index">
+          <button @click="goTo(index)" :class="{
+            'w-3 h-3 rounded-full': true,
+            'bg-green-600': activeSlide === index,
+            'bg-green-300': activeSlide !== index
+          }" class="transition-all duration-300"></button>
+        </template>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="relative bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-4">
+    <!-- Degradado  -->
+    <div class="gradient-corner"></div>
+
+    <div class="max-w-5xl mx-auto text-center relative z-10">
+      <span class="inline-block bg-green-600/20 text-green-400 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+        Contáctanos
+      </span>
+      <h2 class="text-4xl font-bold mb-4">Estamos Aquí Para Ti</h2>
+      <p class="text-lg text-gray-300 mb-12">No dudes en contactarnos. Tu bienestar es nuestra prioridad.</p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Card con z-index mayor -->
+        <div class="card-custom relative z-10 text-center">
+          <div class="text-green-400 text-4xl mb-4">📞</div>
+          <h3 class="text-xl font-semibold mb-1">Teléfono</h3>
+          <p class="text-gray-200">+1 (555) 123-4567</p>
+          <p class="text-sm text-gray-400">Lun - Vie: 8:00 AM - 8:00 PM</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card-custom text-center">
+          <div class="text-green-400 text-4xl mb-4">✉️</div>
+          <h3 class="text-xl font-semibold mb-1">Email</h3>
+          <p class="text-gray-200">info@mentesana.com</p>
+          <p class="text-sm text-gray-400">Respuesta en 24 horas</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="card-custom text-center">
+          <div class="text-green-400 text-4xl mb-4">📍</div>
+          <h3 class="text-xl font-semibold mb-1">Ubicación</h3>
+          <p class="text-gray-200">Av. Principal 123</p>
+          <p class="text-sm text-gray-400">Ciudad, País</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<footer class="text-gray-300 py-12 relative" id="footer">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10 px-4">
+    
+    <!-- Logo y descripción -->
+    <div>
+      <div class="flex items-center gap-2 text-green-400 text-xl font-bold mb-4">
+        <span>🧠</span> MenteSana
+      </div>
+      <p>Comprometidos con tu bienestar mental y emocional.<br>Transformando vidas desde 2014.</p>
+    </div>
+
+    <!-- Servicios -->
+    <div>
+      <h4 class="text-green-400 font-semibold text-lg mb-2">Servicios</h4>
+      <ul class="space-y-1">
+        <li>Terapia Individual</li>
+        <li>Terapia de Pareja</li>
+        <li>Terapia Familiar</li>
+        <li>Manejo del Estrés</li>
+      </ul>
+    </div>
+
+    <!-- Enlaces -->
+    <div>
+      <h4 class="text-green-400 font-semibold text-lg mb-2">Enlaces</h4>
+      <ul class="space-y-1">
+        <li><a href="#" class="hover:text-white">Inicio</a></li>
+        <li><a href="#" class="hover:text-white">Servicios</a></li>
+        <li><a href="#" class="hover:text-white">Sobre Nosotros</a></li>
+        <li><a href="#" class="hover:text-white">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Horarios -->
+    <div>
+      <h4 class="text-green-400 font-semibold text-lg mb-2">Horarios</h4>
+      <ul class="space-y-1">
+        <li>Lunes - Viernes: 8:00 AM - 8:00 PM</li>
+        <li>Sábados: 9:00 AM - 5:00 PM</li>
+        <li>Domingos: Cerrado</li>
+        <li>Emergencias: 24/7</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Línea divisoria -->
+  <div class="border-t border-gray-700 my-8 mx-4"></div>
+
+  <!-- Derechos -->
+  <div class="text-center text-sm px-4">
+    © 2025 MenteSana. Todos los derechos reservados. Hecho con <span class="text-red-500">❤️</span> para tu bienestar.
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
